@@ -3,9 +3,8 @@ package br.senac.projeto.Controller;
 import br.senac.projeto.DTO.TarefaDTO;
 import br.senac.projeto.Repository.TarefaRepository;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
-
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/tarefas")
@@ -17,12 +16,12 @@ public class TarefaController {
         this.repository = repository;
     }
 
-    @PostMapping
+    @PostMapping("/salvar")
     public TarefaDTO criar(@RequestBody TarefaDTO tarefa) {
         return repository.salvar(tarefa);
     }
 
-    @GetMapping
+    @GetMapping("/listar")
     public List<TarefaDTO> listar() {
         return repository.listarTodas();
     }

@@ -14,6 +14,7 @@ public class TarefaDTO {
         this.concluida = concluida;
     }
 
+    //GETERS
     public Long getId() { 
         return id; 
     }
@@ -27,6 +28,7 @@ public class TarefaDTO {
         return concluida; 
     }
 
+    //SETERS
     public void setId(Long id) {
          this.id = id; 
     }
