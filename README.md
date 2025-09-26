@@ -16,8 +16,8 @@ Este projeto é uma API REST desenvolvida em Java com Spring Boot para gerenciar
 ## Endpoints da API
 
 ```http
-POST /tarefas
-GET /tarefas
+POST /tarefas/salvar
+GET /tarefas/listar
 GET /tarefas/{id}
 PUT /tarefas/{id}
 DELETE /tarefas/{id}
