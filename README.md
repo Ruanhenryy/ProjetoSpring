@@ -18,3 +18,11 @@ Este projeto é uma API REST desenvolvida em Java com Spring Boot para gerenciar
 - **POST /tarefas** → Criar nova tarefa  
   Exemplo de corpo da requisição:
   ```json
+## Endpoints da API
+
+```http
+POST /tarefas
+GET /tarefas
+GET /tarefas/{id}
+PUT /tarefas/{id}
+DELETE /tarefas/{id}
